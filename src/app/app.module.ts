@@ -10,6 +10,7 @@ import { FooterComponent } from './layouts/main-layout/footer/footer.component';
 import { DummyContentComponent } from './layouts/main-layout/dummy-content/dummy-content.component';
 import { MainComponent } from './layouts/main-layout/main/main.component';
 import { FooterInfoComponent } from './shared/footer-info/footer-info.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { FooterInfoComponent } from './shared/footer-info/footer-info.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

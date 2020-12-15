@@ -1,0 +1,13 @@
+a {
+  &.post-tag {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: opacity 0.1s linear;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+

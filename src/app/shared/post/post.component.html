@@ -1,0 +1,71 @@
+<section class="post mb-3">
+  <section class="post-title">
+    <h1 class="font-weight-bold text-uppercase">
+      Title Post
+    </h1>
+  </section>
+
+  <section class="post-body">
+    <div class="pre-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros metus, facilisis ac luctus non, eleifend
+        eu lectus. Maecenas quis ante vel sem tincidunt sagittis. Ut in erat luctus, tempor justo sit amet, accumsan
+        neque. Duis porta ut nisi in condimentum. Proin vitae ante hendrerit purus hendrerit dictum at vitae mi. Aliquam
+        tellus leo, gravida sit amet odio in, sollicitudin auctor magna. Maecenas rutrum lectus et gravida vulputate.
+        Nulla nec sem mi. Proin egestas, enim et interdum pellentesque, massa enim auctor mi, ac tincidunt turpis arcu
+        non lectus. Integer pellentesque in dolor sit amet convallis.</p>
+
+      <img src="assets/img/img007.jpg" class="img-fluid"/>
+
+      <br/>
+      <br/>
+
+      <!-- Este iframa está ubicado aquí solo psra probar imágenes dentro de este marco -->
+      <iframe src="https://via.placeholder.com/2000x500/333333/444444" class="mb-2">
+      </iframe>
+    </div>
+
+    <div class="continue-reading pt-1 pb-3">
+      <a href="#" class="text-uppercase font-weight-bold">
+        Seguir leyendo <i class="fas fa-angle-double-right"></i>
+      </a>
+    </div>
+
+    <div *ngIf="showMore">
+      <app-lorem-ipsum></app-lorem-ipsum>
+
+      <hr />
+
+      <!-- Footer -->
+      <section class="post-footer">
+        <p>Aquí va el footer del post</p>
+      </section>
+    </div>
+  </section>
+
+  <div *ngIf="showMore">
+     <hr />
+
+     <!-- Tags -->
+     <app-post-tags></app-post-tags>
+
+     <!-- Fila de datos meta -->
+     <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+       <div>Publicado el [día] [numero] de [mes] de [año]</div>
+       <div>
+         <a href="#">
+           <i class="fas fa-heart fa-fw"></i>
+         </a>
+       </div>
+     </div>
+
+     <hr />
+
+     <!-- Comentarios -->
+     <app-post-comments></app-post-comments>
+
+     <hr />
+
+     <!-- Notas-->
+     <app-post-notes></app-post-notes>
+  </div>
+</section>

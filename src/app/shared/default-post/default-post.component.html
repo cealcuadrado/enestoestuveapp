@@ -1,4 +1,4 @@
-<section class="post mb-3">
+<section class="default-post mb-3">
   <section class="post-title">
     <h1 class="font-weight-bold text-uppercase">
       Title Post
@@ -14,12 +14,12 @@
         Nulla nec sem mi. Proin egestas, enim et interdum pellentesque, massa enim auctor mi, ac tincidunt turpis arcu
         non lectus. Integer pellentesque in dolor sit amet convallis.</p>
 
-      <img src="assets/img/img005.jpg" class="img-fluid"/>
+      <img src="assets/img/img005.jpg" class="img-fluid" />
 
-      <br/>
-      <br/>
+      <br />
+      <br />
 
-      <!-- Este iframa está ubicado aquí solo para probar imágenes dentro de este marco -->
+      <!-- Este iframa está ubicado aquí solo psra probar imágenes dentro de este marco -->
       <iframe src="https://via.placeholder.com/2000x500/333333/444444" class="mb-2">
       </iframe>
     </div>
@@ -54,29 +54,29 @@
   </section>
 
   <div *ngIf="showMore">
-     <hr />
+    <hr />
 
-     <!-- Tags -->
-     <app-post-tags></app-post-tags>
+    <!-- Tags -->
+    <app-post-tags></app-post-tags>
 
-     <!-- Fila de datos meta -->
-     <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
-       <div>Publicado el [día] [numero] de [mes] de [año]</div>
-       <div>
-         <a href="#">
-           <i class="fas fa-heart fa-fw"></i>
-         </a>
-       </div>
-     </div>
+    <!-- Fila de datos meta -->
+    <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+      <div>Publicado el [día] [numero] de [mes] de [año]</div>
+      <div>
+        <a href="#">
+          <i class="fas fa-heart fa-fw"></i>
+        </a>
+      </div>
+    </div>
 
-     <hr />
+    <hr />
 
-     <!-- Comentarios -->
-     <app-post-comments></app-post-comments>
+    <!-- Comentarios -->
+    <app-post-comments></app-post-comments>
 
-     <hr />
+    <hr />
 
-     <!-- Notas-->
-     <app-post-notes></app-post-notes>
+    <!-- Notas-->
+    <app-post-notes></app-post-notes>
   </div>
 </section>

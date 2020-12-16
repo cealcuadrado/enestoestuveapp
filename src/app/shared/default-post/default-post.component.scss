@@ -1,0 +1,21 @@
+.default-post {
+  .post-body {
+
+    iframe {
+      width: 100%;
+      height: auto;
+      border: 1px solid black;
+    }
+
+    .continue-reading {
+       a {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

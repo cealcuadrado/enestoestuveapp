@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { PostComponent } from './post/post.component';
 import { LoremIpsumComponent } from './lorem-ipsum/lorem-ipsum.component';
 import { NgModule } from '@angular/core';
@@ -8,8 +9,8 @@ import { PostCommentsComponent } from './post/post-comments/post-comments.compon
 
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { ParagraphLoremIpsumComponent } from './paragraph-lorem-ipsum/paragraph-lorem-ipsum.component';
-import { PostsComponent } from './posts/posts.component';
 import { DefaultPostComponent } from './default-post/default-post.component';
+import { DefaultPostTagsComponent } from './default-post/default-post-tags/default-post-tags.component';
 
 @NgModule({
   declarations: [
@@ -19,18 +20,18 @@ import { DefaultPostComponent } from './default-post/default-post.component';
     PostNotesComponent,
     PostCommentsComponent,
     ParagraphLoremIpsumComponent,
-    PostsComponent,
-    DefaultPostComponent
+    DefaultPostComponent,
+    DefaultPostTagsComponent
   ],
   imports: [
     CommonModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    RouterModule
   ],
   exports: [
     LoremIpsumComponent,
     PostComponent,
     DefaultPostComponent,
-    PostsComponent
   ]
 })
 export class SharedModule { }

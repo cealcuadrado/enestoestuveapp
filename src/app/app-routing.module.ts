@@ -2,18 +2,39 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'search', loadChildren: () => import('./search/search.module').then(m => m.SearchModule) },
-  { path: 'tag', loadChildren: () => import('./tags/tags.module').then(m => m.TagsModule) },
-  { path: 'main', loadChildren: () => import('./main/main.module').then(m => m.MainModule) },
+  {
+    path: 'search',
+    loadChildren: () =>
+      import('./search/search.module').then((m) => m.SearchModule),
+  },
+  {
+    path: 'tag',
+    loadChildren: () => import('./tags/tags.module').then((m) => m.TagsModule),
+    runGuardsAndResolvers: 'always',
+  },
+  {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
+  },
+  {
+    path: 'post',
+    loadChildren: () =>
+      import('./posts/posts.module').then((m) => m.PostsModule),
+  },
+  {
+    path: 'about',
+    loadChildren: () =>
+      import('./about/about.module').then((m) => m.AboutModule),
+  },
   {
     path: '',
     redirectTo: '/main',
-    pathMatch: 'full'
-  }
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

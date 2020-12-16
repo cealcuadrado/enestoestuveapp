@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-post-tags',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostTagsComponent implements OnInit {
 
-  tags: string[] = ['Tag uno', 'Tag dos', 'Tag tres', 'Tag cuatro', 'Tag cinco', 'Tag seis', 'Tag siete', 'Tag ocho', 'Tag nueve', 'Tag diez']
+  @Input() tags: string[];
+
   constructor() { }
 
   ngOnInit(): void {

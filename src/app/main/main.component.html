@@ -1,1 +1,7 @@
-<app-posts></app-posts>
+<div *ngIf="posts; else loading">
+  <app-post *ngFor="let post of posts" [post]="post" [showMore]="false">
+  </app-post>
+</div>
+<ng-template #loading>
+  <i class="fas fa-spinner fa-spin fa-fw"></i>
+</ng-template>

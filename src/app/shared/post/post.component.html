@@ -19,7 +19,7 @@
     </div>
 
     <div class="continue-reading pt-1 pb-3" *ngIf="!showMore">
-      <a href="#" class="text-uppercase font-weight-bold">
+      <a href="#" routerLink="/post/{{post.id}}" class="text-uppercase font-weight-bold">
         Seguir leyendo <i class="fas fa-angle-double-right"></i>
       </a>
     </div>
@@ -51,7 +51,7 @@
      <hr />
 
      <!-- Tags -->
-     <app-post-tags></app-post-tags>
+     <app-post-tags [tags]="post.tags"></app-post-tags>
 
      <!-- Fila de datos meta -->
      <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">

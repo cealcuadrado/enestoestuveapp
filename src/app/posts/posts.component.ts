@@ -1,5 +1,4 @@
-import { PostService } from './../services/post.service';
-import { Post } from './../interfaces/post';
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,15 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
 
-  posts: Post[];
+  id: string;
+  showMore: true;
 
   constructor(
-    private post: PostService
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
-    this.post.getPosts().subscribe(posts => {
-      this.posts = posts;
+    this.activatedRoute.params.subscribe(params => {
+      if (params.id) {
+        this.id = params.id;
+      }
     });
   }
 

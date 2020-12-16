@@ -18,21 +18,27 @@
           <input type="search" id="search" name="search" placeholder="Buscar por texto o tag..." formControlName="searchQuery" />
         </form>
 
-        <span class="navbar-text text-uppercase">Qué estuve...</span>
+        <span class="navbar-text text-uppercase">¿Qué estuve...</span>
          <ul class="navbar-nav">
            <li class="nav-item">
              <a href="#" [routerLink]="['tag', 'escuchando']" routerLinkActive="active" class="nav-link text-uppercase" (click)="closeCollapse()">
-               <i class="fas fa-book fa-fw"></i> Escuchando
+               <i class="fas fa-book fa-fw"></i> Escuchando?
              </a>
            </li>
            <li class="nav-item">
              <a href="#" [routerLink]="['tag', 'jugando']" routerLinkActive="active" class="nav-link text-uppercase" (click)="closeCollapse()">
-               <i class="fas fa-gamepad fa-fw"></i> Jugando
+               <i class="fas fa-gamepad fa-fw"></i> Jugando?
              </a>
            </li>
            <li class="nav-item">
              <a href="#" [routerLink]="['tag', 'viendo']" routerLinkActive="active" class="nav-link text-uppercase" (click)="closeCollapse()">
-               <i class="fas fa-tv fa-fw"></i> Viendo
+               <i class="fas fa-tv fa-fw"></i> Viendo?
+             </a>
+           </li>
+           <li class="nav-item">
+             <a href="#" [routerLink]="['about']" routerLinkActive="active" class="nav-link text-uppercase"
+               (click)="closeCollapse()">
+               Acerca de
              </a>
            </li>
         </ul>

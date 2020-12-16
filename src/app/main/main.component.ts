@@ -1,3 +1,4 @@
+import { Post } from './../shared/interfaces/post';
 import { PostService } from './../shared/services/post.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,13 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  posts: Post[];
+
   constructor(
     private post: PostService
   ) { }
 
   ngOnInit(): void {
     this.post.getPosts().subscribe(posts => {
-      console.log(posts);
+      this.posts = posts;
     });
   }
 

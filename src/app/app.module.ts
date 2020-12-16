@@ -11,6 +11,7 @@ import { DummyContentComponent } from './layouts/main-layout/dummy-content/dummy
 import { MainComponent } from './layouts/main-layout/main/main.component';
 import { FooterInfoComponent } from './shared/footer-info/footer-info.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { Post } from './../interfaces/post';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
+  @Input() post: Post;
   @Input() showMore: boolean = true;
 
   constructor() { }

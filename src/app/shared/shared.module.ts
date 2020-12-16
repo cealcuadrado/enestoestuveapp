@@ -29,7 +29,8 @@ import { DefaultPostComponent } from './default-post/default-post.component';
   exports: [
     LoremIpsumComponent,
     PostComponent,
-    DefaultPostComponent
+    DefaultPostComponent,
+    PostsComponent
   ]
 })
 export class SharedModule { }

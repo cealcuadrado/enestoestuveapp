@@ -31,8 +31,11 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleCollapse(): void {
-    console.log('toggleCollapse()');
     this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
+
+  closeCollapse(): void {
+    this.isMenuCollapsed = true;
   }
 
   submitQuery()  {

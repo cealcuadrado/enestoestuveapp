@@ -12,6 +12,8 @@ export class TagsComponent implements OnInit, OnDestroy {
   tag: string;
   navigationSubscription;
 
+  page = 1;
+
   posts: Post[];
 
   constructor(

@@ -1,4 +1,4 @@
-<section class="post mb-3">
+<section class="post mb-4">
   <section class="post-title">
     <h1 class="font-weight-bold text-uppercase">
       {{post.title}}
@@ -47,30 +47,33 @@
     </div>
   </section>
 
-  <div *ngIf="showMore">
-     <hr />
+  <section class="post-meta">
+    <hr />
 
-     <!-- Tags -->
-     <app-post-tags [tags]="post.tags"></app-post-tags>
+    <!-- Tags -->
+    <app-post-tags [tags]="post.tags"></app-post-tags>
 
-     <!-- Fila de datos meta -->
-     <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
-       <div>Publicado el [día] [numero] de [mes] de [año]</div>
-       <div>
-         <a href="#">
-           <i class="fas fa-heart fa-fw"></i>
-         </a>
-       </div>
-     </div>
+    <!-- Fila de datos meta -->
+    <div
+      class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-start align-items-lg-center">
+      <div>Publicado el [día] [numero] de [mes] de [año]</div>
+      <div>
+        <a href="#">
+          <i class="fas fa-heart fa-fw"></i>
+        </a>
+      </div>
+    </div>
 
-     <hr />
+    <hr />
+  </section>
 
-     <!-- Comentarios -->
-     <app-post-comments></app-post-comments>
+  <section class="post-interactions" *ngIf="showMore">
+    <!-- Comentarios -->
+    <app-post-comments></app-post-comments>
 
-     <hr />
+    <hr />
 
-     <!-- Notas-->
-     <app-post-notes></app-post-notes>
-  </div>
+    <!-- Notas-->
+    <app-post-notes></app-post-notes>
+  </section>
 </section>

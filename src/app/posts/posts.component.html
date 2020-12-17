@@ -1,3 +1,8 @@
-<p>posts works!</p>
-
-<p>ID: {{id}}</p>
+<app-post
+  *ngIf="loadedPost; else loading"
+  [post]="loadedPost"
+  [showMore]="true">
+</app-post>
+<ng-template #loading>
+  <i class="fas fa-spinner fa-spin fa-fw"></i>
+</ng-template>

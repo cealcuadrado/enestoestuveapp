@@ -25,4 +25,21 @@ export class PostService {
   getPostsByTag(tag: string): Observable<Post[]> {
     return this.http.get<Post[]>(`${this.url}`).pipe(map(posts => posts.filter(post => post.tags.includes(tag))));
   }
+
+  getPost(id: number): Observable<Post> {
+    return this.http.get<Post[]>(`${this.url}`).pipe(map(posts => posts.filter(post => post.id === id)[0]));
+  }
+
+  searchPost(query: string): Observable<Post[]> {
+    let cleanQuery = query.toLowerCase();
+    return this.http.get<Post[]>(`${this.url}`)
+      .pipe(map(posts => posts.filter(post => {
+        return (
+          post.title.toLowerCase().includes(cleanQuery)
+          || post.content.toLowerCase().includes(cleanQuery)
+          || post.moreContent.toLowerCase().includes(cleanQuery)
+          || post.tags.map(tag => tag.toLowerCase()).includes(cleanQuery)
+        );
+      })));
+  }
 }

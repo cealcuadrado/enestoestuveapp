@@ -11,6 +11,8 @@ export class MainComponent implements OnInit {
 
   posts: Post[];
 
+  page = 1;
+
   constructor(
     private post: PostService
   ) { }

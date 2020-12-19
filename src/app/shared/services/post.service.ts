@@ -23,7 +23,11 @@ export class PostService {
   }
 
   getPostsByTag(tag: string): Observable<Post[]> {
-    return this.http.get<Post[]>(`${this.url}`).pipe(map(posts => posts.filter(post => post.tags.includes(tag))));
+    let cleanTag = tag.toLowerCase();
+    return this.http.get<Post[]>(`${this.url}`)
+      .pipe(map(posts => posts.filter(post => {
+        return post.tags.map(tag => tag.toLowerCase()).includes(cleanTag);
+      })));
   }
 
   getPost(id: number): Observable<Post> {

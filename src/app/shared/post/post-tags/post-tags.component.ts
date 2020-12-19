@@ -14,4 +14,8 @@ export class PostTagsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setTagName(str: string) {
+    let newStr = str.replace(/\s/g, '+');
+    return newStr;
+  }
 }

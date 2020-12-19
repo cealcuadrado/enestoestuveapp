@@ -34,16 +34,20 @@ export class TagsComponent implements OnInit, OnDestroy {
 
   initialiseInvites() {
     this.activatedRoute.params.subscribe((params) => {
-      console.log('start');
       if (params.tag) {
-        this.tag = params.tag;
-        this.post.getPostsByType(this.tag).subscribe(posts => {
+        this.tag = this.setCleanTag(params.tag);
+        this.post.getPostsByTag(this.tag).subscribe(posts => {
           this.posts = posts;
         });
       }
     });
 
     this.navigationSubscription.unsubscribe();
+  }
+
+  setCleanTag(str: string) {
+    let newStr = str.replace(/\+/g, ' ');
+    return newStr;
   }
 
   ngOnDestroy() {

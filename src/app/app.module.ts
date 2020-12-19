@@ -1,4 +1,3 @@
-import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,6 +12,7 @@ import { MainComponent } from './layouts/main-layout/main/main.component';
 import { FooterInfoComponent } from './shared/footer-info/footer-info.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UpIconComponent } from './layouts/main-layout/up-icon/up-icon.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     DummyContentComponent,
     MainComponent,
-    FooterInfoComponent
+    FooterInfoComponent,
+    UpIconComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,12 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: Window,
+      useValue: window
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

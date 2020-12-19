@@ -1,1 +1,33 @@
-<p>types works!</p>
+<div class="types">
+  <div *ngIf="posts; else loading">
+    <div class="types-header">
+      <div [ngSwitch]="type">
+        <div *ngSwitchCase="'escuchando'">
+          <h1 class="text-uppercase font-weight-bold">
+            <i class="fas fa-book fa-fw"></i> ¿Qué estuve escuchando?
+          </h1>
+        </div>
+        <div *ngSwitchCase="'jugando'">
+          <h1 class="text-uppercase font-weight-bold">
+            <i class="fas fa-gamepad fa-fw"></i> ¿Qué estuve jugando?
+          </h1>
+        </div>
+        <div *ngSwitchCase="'viendo'">
+          <h1 class="text-uppercase font-weight-bold">
+            <i class="fas fa-tv fa-fw"></i>¿Qué estuve viendo?</h1>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <app-post
+      *ngFor="let post of posts"
+      [post]="post"
+      [showMore]="false">
+    </app-post>
+  </div>
+  <ng-template #loading>
+    <i class="fa fa-spinner fa-spin fa-fw"></i>
+  </ng-template>
+</div>

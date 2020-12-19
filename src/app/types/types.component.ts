@@ -1,3 +1,6 @@
+import { PostService } from './../shared/services/post.service';
+import { Post } from './../shared/interfaces/post';
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TypesComponent implements OnInit {
 
-  constructor() { }
+  type: string;
+  posts: Post[];
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private post: PostService
+  ) { }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(params => {
+      if (params.type) {
+        this.type = params.type;
+        let type = this.type.toLowerCase();
+        this.post.getPostsByType(type).subscribe(posts => {
+          this.posts = posts;
+        });
+      }
+    });
   }
 
 }

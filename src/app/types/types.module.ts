@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { TypesComponent } from './types.component';
   declarations: [TypesComponent],
   imports: [
     CommonModule,
-    TypesRoutingModule
+    TypesRoutingModule,
+    SharedModule
   ]
 })
 export class TypesModule { }

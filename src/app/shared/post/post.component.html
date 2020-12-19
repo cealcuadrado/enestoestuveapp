@@ -1,8 +1,10 @@
 <section class="post mb-4">
   <section class="post-title">
-    <h1 class="font-weight-bold text-uppercase">
-      {{post.title}}
-    </h1>
+    <a href="#" [routerLink]="['/post', post.id]">
+      <h1 class="font-weight-bold text-uppercase">
+        {{post.title}}
+      </h1>
+    </a>
   </section>
 
   <section class="post-body">
@@ -11,7 +13,7 @@
 
       <img [src]="post.imgSrc" class="img-fluid mb-2"/>
 
-      <!-- Este iframa está ubicado aquí solo para probar imágenes dentro de este marco -->
+      <!-- Este iframe está ubicado aquí solo para probar imágenes dentro de este marco -->
       <!--
       <iframe src="https://via.placeholder.com/2000x500/333333/444444" class="mb-2">
       </iframe>
@@ -19,7 +21,7 @@
     </div>
 
     <div class="continue-reading pt-1 pb-3" *ngIf="!showMore">
-      <a href="#" routerLink="/post/{{post.id}}" class="text-uppercase font-weight-bold">
+      <a href="#" [routerLink]="['/post', post.id]" class="btn btn-block btn-black btn-lg text-uppercase font-weight-bold">
         Seguir leyendo <i class="fas fa-angle-double-right"></i>
       </a>
     </div>
@@ -27,18 +29,12 @@
     <div *ngIf="showMore">
       <p>{{post.moreContent}}</p>
 
-      <div class="mb-2">
+      <div *ngIf="post.youtubeVideoId" class="mb-2">
         <youtube-player [videoId]="post.youtubeVideoId" width="100%">
         </youtube-player>
       </div>
 
-      <app-paragraph-lorem-ipsum></app-paragraph-lorem-ipsum>
-
-      <img src="assets/img/img007.jpg" class="img-fluid mb-2" />
-
-      <app-paragraph-lorem-ipsum></app-paragraph-lorem-ipsum>
-
-      <hr />
+      <p>{{post.moreContent}}</p>
 
       <!-- Footer -->
       <section class="post-footer">
@@ -47,19 +43,27 @@
     </div>
   </section>
 
-  <section class="post-meta">
-    <hr />
+  <div *ngIf="showMore">
+    <hr/>
+  </div>
 
+  <section class="post-meta">
     <!-- Tags -->
     <app-post-tags [tags]="post.tags"></app-post-tags>
 
     <!-- Fila de datos meta -->
     <div
       class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-start align-items-lg-center">
-      <div>Publicado el [día] [numero] de [mes] de [año]</div>
-      <div>
+      <div>{{post.date | date:'LLLL L, yyyy'}}<span *ngIf="showMore">, {{post.date | date:'HH:mm'}}</span></div>
+      <div class="post-meta-links">
         <a href="#">
-          <i class="fas fa-heart fa-fw"></i>
+          <i class="fas fa-heart fa-fw"></i> {{post.notes}}
+        </a>
+        <a href="#">
+          <i class="fas fa-retweet fa-fw"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-ellipsis-v fa-fw"></i>
         </a>
       </div>
     </div>

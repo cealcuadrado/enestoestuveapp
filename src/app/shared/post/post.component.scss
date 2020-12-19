@@ -1,12 +1,30 @@
 .post {
-  .post-body {
+  .post-title {
+    a {
+      text-decoration: none;
+      
+      h1 {
+        color: black;
+        text-decoration: none;
+        transition: opacity 0.1s linear;
+      }
 
+      &:hover {
+        h1 {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  .post-body {
     iframe {
       width: 100%;
       height: auto;
       border: 1px solid black;
     }
 
+    /*
     .continue-reading {
        a {
         color: black;
@@ -17,9 +35,27 @@
         }
       }
     }
+    */
 
     .post-footer {
       font-style: italic;
+    }
+  }
+
+  .post-meta {
+    .post-meta-links {
+      a {
+        color: black;
+        text-decoration: none;
+
+        &:not(:last-child) {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
     }
   }
 }

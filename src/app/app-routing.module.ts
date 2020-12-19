@@ -27,7 +27,16 @@ const routes: Routes = [
       import('./about/about.module').then((m) => m.AboutModule),
   },
   {
-    path: '',
+    path: 'archive',
+    loadChildren: () =>
+      import('./archive/archive.module').then((m) => m.ArchiveModule),
+  },
+  {
+    path: 'rss',
+    loadChildren: () => import('./rss/rss.module').then((m) => m.RssModule),
+  },
+  {
+    path: '**',
     redirectTo: '/main',
     pathMatch: 'full',
   },

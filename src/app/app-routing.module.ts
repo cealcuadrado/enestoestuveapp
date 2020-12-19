@@ -35,6 +35,7 @@ const routes: Routes = [
     path: 'rss',
     loadChildren: () => import('./rss/rss.module').then((m) => m.RssModule),
   },
+  { path: 'types', loadChildren: () => import('./types/types.module').then(m => m.TypesModule) },
   {
     path: '**',
     redirectTo: '/main',

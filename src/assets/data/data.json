@@ -1,15 +1,14 @@
-[
-  {
-    "id":1,
-    "type":"escuchando",
-    "title":"Qué estuve escuchando #1",
+[{
+    "id": 1,
+    "type": "escuchando",
+    "title": "Qué estuve escuchando #1",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et purus dolor. Sed elementum ex semper tellus lacinia sollicitudin. Aliquam quis libero id neque placerat aliquam. Nunc pellentesque lectus risus, nec ultrices eros ultricies ut. Suspendisse sollicitudin nibh vitae magna convallis, vitae fringilla augue suscipit. Etiam ut lacinia libero. Aenean iaculis turpis ac mollis accumsan. Nullam vehicula enim sed velit eleifend euismod.",
     "moreContent": "Donec imperdiet dictum erat, eget consectetur neque elementum in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum efficitur consectetur pulvinar. Morbi sit amet facilisis tellus. Praesent sodales pulvinar mauris, eu dignissim sapien laoreet nec. Nunc luctus consequat semper. Cras auctor nisi eget est faucibus, mattis tristique sem venenatis. Sed vel magna eu velit gravida dictum.",
-    "imgSrc":"assets/img/img001.jpg",
+    "imgSrc": "assets/img/img001.jpg",
     "youtubeVideoId": "qJlxJrUkqds",
-    "notes":0,
+    "notes": 0,
     "date": "2020-01-12T16:40:00.511Z",
-    "tags":["Qué estuve escuchando", "El robo del siglo"]
+    "tags": ["Qué estuve escuchando", "El robo del siglo"]
   },
   {
     "id": 2,
@@ -170,6 +169,120 @@
     "imgSrc": "assets/img/img015.jpg",
     "notes": 61,
     "date": "2020-11-04T18:50:00.511Z",
+    "tags": ["Qué estuve viendo", "Peñalolén"]
+  },
+  {
+    "id": 16,
+    "type": "escuchando",
+    "title": "Qué estuve escuchando #6",
+    "content": "Pellentesque tempor orci eu sapien fringilla, in feugiat nulla cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum rhoncus posuere sapien et malesuada. Morbi non tempus arcu. Pellentesque nec bibendum neque. Sed varius aliquet ante, ut porttitor dolor. Phasellus lacinia ac ex quis cursus. Curabitur feugiat mollis turpis quis lacinia. Nam congue ultrices ante, id dictum enim sagittis vel. Mauris a nibh consectetur, pellentesque eros ut, eleifend velit. Integer consectetur imperdiet tortor, ac aliquet leo efficitur at. Ut sed nibh nec magna lacinia pharetra. Ut eget ex vel ipsum sodales convallis. Nam commodo venenatis lectus. Nulla at libero convallis, faucibus enim at, bibendum lacus.",
+    "moreContent": "Morbi mattis eleifend risus et bibendum. Praesent id auctor neque. Donec volutpat dui eget eros tempor vestibulum. Cras commodo suscipit pretium. Praesent accumsan consequat commodo. Aenean ipsum mi, rhoncus vel bibendum eget, vulputate at nunc. Vivamus aliquet viverra ligula eu egestas. In et eros massa. Aliquam purus ex, scelerisque at fringilla quis, tempor vel urna.\nQuisque a placerat purus. Donec hendrerit fringilla mi vel dignissim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis dignissim diam neque, at vehicula odio sodales et. Morbi convallis arcu augue, in hendrerit quam tempor nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ac ipsum id nunc semper dapibus vitae eu ipsum. Donec suscipit velit a sapien egestas, vitae condimentum sem lobortis. Suspendisse quis porta orci. Vivamus ac elit porttitor, vulputate lorem nec, blandit magna. Sed vitae finibus purus. Etiam laoreet mollis massa vel scelerisque. Aliquam eleifend, quam in semper cursus, dolor risus fringilla urna, id egestas lectus risus vitae arcu.\nDuis vulputate ipsum et arcu tristique, sit amet tincidunt nunc elementum. Duis ante nunc, faucibus eget eleifend eu, faucibus ut nulla. Mauris suscipit neque a turpis lobortis placerat. Nulla finibus tincidunt neque, in eleifend magna lacinia eget. Fusce feugiat blandit convallis. Nunc convallis ligula urna, quis lacinia ipsum ullamcorper nec. Nam nec mi ipsum. Nullam et erat rhoncus, semper urna ut, tincidunt lectus. Pellentesque et libero eget lorem dignissim ultricies viverra in urna.\nAenean nec ullamcorper dui. Nulla eleifend sagittis risus posuere porta. Proin eget magna ac mauris mollis ornare. Etiam tempus metus ac augue ullamcorper elementum. Aenean eleifend magna quis convallis mattis. Praesent cursus mi eu erat venenatis tincidunt. Integer sed risus sit amet dui pulvinar commodo sit amet in magna. Quisque iaculis erat vulputate mollis finibus. Pellentesque arcu nisi, tristique eu sapien sit amet, porttitor lacinia libero. Vestibulum sit amet maximus dui, eu semper dolor. Aenean et viverra risus. Cras a risus vitae orci feugiat feugiat sit amet a massa. Fusce consectetur commodo tellus, eu tincidunt dolor venenatis ut. Donec ultricies viverra ligula sit amet aliquam. Vestibulum ac enim et odio imperdiet consectetur. Integer dictum faucibus congue.",
+    "imgSrc": "assets/img/img016.jpg",
+    "youtubeVideoId": "viDR_xQbN3U",
+    "notes": 8,
+    "date": "2020-18-10T13:20:00.511Z",
+    "tags": ["Qué estuve viendo", "Peñalolén"]
+  },
+  {
+    "id": 17,
+    "type": "jugando",
+    "title": "Qué estuve jugando #6",
+    "content": "Aenean at consequat ligula, eget fringilla dolor. Curabitur mi augue, lobortis ac ultrices a, dapibus at magna. Vivamus blandit, urna sed commodo mattis, sapien sapien semper est, ut congue purus felis et turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque non lectus enim. Morbi mattis vulputate rutrum. Donec cursus tincidunt lorem id consequat. Fusce orci tortor, malesuada dapibus neque et, varius varius dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam vehicula, leo vitae eleifend molestie, nulla lacus molestie elit, ut imperdiet dui felis sit amet justo.",
+    "moreContent": "Pellentesque tincidunt eros tortor, in dignissim tortor tristique ac. Aenean vitae arcu in augue pharetra commodo. Suspendisse efficitur ultricies varius. Sed feugiat enim vitae faucibus elementum. Proin tempus augue et lorem condimentum, eget auctor turpis pellentesque. Integer a purus luctus mauris cursus vehicula. Aenean consequat tempor nunc ut blandit. Nunc eu purus elementum, dictum velit id, luctus ligula. Vestibulum pretium malesuada leo a tincidunt.\nIn placerat nunc et porta laoreet. Maecenas nisl orci, lacinia non suscipit sed, mattis in ante. Etiam vehicula, neque et suscipit suscipit, ante nisl cursus nisi, non blandit diam mi quis tellus. Mauris aliquet odio quis justo sagittis, sit amet molestie velit aliquet. Nulla ornare tortor vel dolor venenatis, sed posuere neque gravida. Etiam aliquam convallis est, vel molestie elit pretium ut. Aliquam erat volutpat. Ut condimentum tellus in porttitor vestibulum. Donec ut urna enim. Donec fermentum enim felis, eget viverra augue sollicitudin quis.\nSed ornare nisi eros, sit amet feugiat lacus ultrices sed. Morbi suscipit lorem et purus molestie feugiat. Nunc euismod, est eu luctus tempus, urna leo placerat augue, dignissim ultrices odio nisl at mi. Phasellus ullamcorper magna ut mauris maximus, non semper risus molestie. Aliquam molestie ornare nulla, ac pellentesque elit ultrices non. Vivamus finibus arcu non dolor molestie molestie. Integer faucibus ullamcorper eros, vel volutpat nisl sodales vel. Suspendisse potenti. Phasellus vitae mi pellentesque, posuere mauris eget, tincidunt sapien. Cras eget hendrerit lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id libero eu neque imperdiet elementum. Quisque lacinia a purus vel tristique.\nPellentesque et vestibulum ligula. Suspendisse turpis velit, pulvinar quis elementum quis, mollis nec orci. Maecenas sodales, lorem vitae facilisis mattis, nibh elit tincidunt tortor, eget vulputate augue lectus sit amet elit. Etiam bibendum mattis scelerisque. Nulla iaculis ante tortor, ac ornare mi interdum a. Donec ac malesuada diam. Proin velit ligula, ullamcorper in dolor et, lacinia vehicula enim. In hac habitasse platea dictumst. Nam posuere convallis metus vel suscipit. Pellentesque nisl magna, lacinia quis gravida sit amet, dapibus id neque. Donec ut ultrices enim, ultricies vehicula odio. Donec auctor turpis ut sem commodo, ut varius metus lobortis. Sed in erat dui.",
+    "imgSrc": "assets/img/img017.jpg",
+    "notes": 89,
+    "date": "2020-16-08T19:45:00.511Z",
+    "tags": ["Qué estuve jugando", "Vitacura"]
+  },
+  {
+    "id": 18,
+    "type": "viendo",
+    "title": "Qué estuve viendo #6",
+    "content": "Etiam semper vehicula sollicitudin. Nullam porttitor dui sit amet consectetur consequat. Proin laoreet tellus id nibh eleifend, at interdum est faucibus. Maecenas vitae quam varius, ultricies ante id, egestas ipsum. Cras convallis interdum finibus. Morbi in turpis rutrum, mattis velit viverra, finibus lectus. Donec gravida mi a dolor sodales, quis commodo dolor aliquet. In a diam pulvinar metus suscipit gravida vel non est.\nMaecenas et euismod metus, eu semper orci. Vestibulum efficitur ornare mi ac aliquam. Phasellus at feugiat elit, ut iaculis urna. Vestibulum consectetur arcu lacus, vitae euismod est vestibulum sed. Fusce dictum elementum pretium. Nulla accumsan augue sit amet eros mollis, id dictum magna imperdiet. Nullam lobortis massa nec ligula tristique, eu bibendum nulla iaculis. Aliquam a lectus luctus, pulvinar turpis in, mollis massa. Sed varius nulla sed lectus sodales aliquet. Aliquam turpis lectus, molestie in malesuada non, euismod non justo.",
+    "moreContent": "Ut efficitur ex quis accumsan auctor. Quisque malesuada at neque et suscipit. Donec tincidunt commodo tincidunt. Aliquam faucibus diam ac ante posuere facilisis. Nunc a enim ut sapien ultricies dictum a ut eros. Aenean lacinia ut metus nec viverra. Mauris in sem vestibulum, feugiat justo ut, maximus est. Quisque elementum blandit ipsum at finibus. Morbi vitae diam porta, fringilla mi sit amet, maximus diam. Maecenas ac metus vitae neque congue convallis ac a lorem. Phasellus vitae aliquam quam. Nullam tempus rhoncus nunc, eget posuere dolor congue in.\nPellentesque et vestibulum ligula. Suspendisse turpis velit, pulvinar quis elementum quis, mollis nec orci. Maecenas sodales, lorem vitae facilisis mattis, nibh elit tincidunt tortor, eget vulputate augue lectus sit amet elit. Etiam bibendum mattis scelerisque. Nulla iaculis ante tortor, ac ornare mi interdum a. Donec ac malesuada diam. Proin velit ligula, ullamcorper in dolor et, lacinia vehicula enim. In hac habitasse platea dictumst. Nam posuere convallis metus vel suscipit. Pellentesque nisl magna, lacinia quis gravida sit amet, dapibus id neque. Donec ut ultrices enim, ultricies vehicula odio. Donec auctor turpis ut sem commodo, ut varius metus lobortis. Sed in erat dui.",
+    "imgSrc": "assets/img/img018.jpg",
+    "notes": 83,
+    "date": "2020-07-01T13:14:00.511Z",
+    "tags": ["Qué estuve viendo", "Hilda", "Netflix"]
+  },
+  {
+    "id": 19,
+    "type": "escuchando",
+    "title": "Qué estuve escuchando #7",
+    "content": "Suspendisse potenti. Vivamus eget ligula nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vel ex vel massa auctor tincidunt non in metus. Donec convallis eros id sapien venenatis, et porttitor tellus mollis. Suspendisse in tortor et magna vehicula pulvinar accumsan a lacus. Nulla molestie eros ac rutrum efficitur.",
+    "moreContent": "Maecenas vel quam dapibus, tristique mi a, porttitor diam. Sed pretium leo sit amet condimentum egestas. Mauris sit amet turpis libero. Suspendisse nunc turpis, euismod et dapibus a, malesuada sit amet velit. Nullam tristique, nisl quis placerat convallis, neque turpis pharetra sem, vel vulputate arcu libero et nisi. Mauris id faucibus mauris, sed aliquet arcu. Etiam auctor congue sapien non mattis. Vestibulum orci nisi, placerat at ultricies in, iaculis at turpis. Nulla at dolor pharetra, tempor elit vitae, consequat tellus. Fusce ac justo elit. Nunc laoreet nunc at dui vestibulum, at suscipit mi efficitur. Sed eleifend lobortis nunc at blandit. In posuere ex id tellus cursus vulputate. Fusce ullamcorper orci eu tortor blandit scelerisque. Etiam tempus justo scelerisque diam vehicula, a condimentum sem luctus.\nDuis et dolor at odio pellentesque mattis. Donec ut ex eget odio dignissim efficitur nec eu felis. Curabitur at nibh venenatis, suscipit elit convallis, porttitor enim. Cras in laoreet odio. Donec nec placerat magna, non efficitur orci. Pellentesque non venenatis urna. Cras vel dolor eget ligula accumsan venenatis.",
+    "imgSrc": "assets/img/img019.jpg",
+    "youtubeVideoId": "J9d32O7J3Nc",
+    "notes": 1025,
+    "date": "2020-02-06T22:45:00.511Z",
+    "tags": ["Qué estuve viendo", "Lo Barnechea"]
+  },
+  {
+    "id": 20,
+    "type": "jugando",
+    "title": "Qué estuve jugando #7",
+    "content": "Duis dignissim dui imperdiet massa consequat, in tincidunt justo blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus eleifend nisl cursus nisi ultrices commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas finibus maximus augue. Praesent consequat sem in odio semper egestas. Fusce placerat consectetur porta. Vestibulum condimentum nec felis vitae feugiat. Mauris dictum in dolor congue consequat. Vivamus sed dapibus massa. Nulla facilisi. Proin semper leo quis euismod dapibus.",
+    "moreContent": "Etiam pellentesque gravida turpis, at pulvinar turpis euismod eget. Suspendisse pharetra magna velit, eget consequat nunc tempor non. Nulla facilisis, mi nec consectetur tristique, ex lorem ultricies purus, a scelerisque augue dolor vel tortor. Praesent mollis, nibh eu vehicula convallis, justo dui accumsan massa, eu aliquet justo lectus quis ex. Donec eget metus bibendum, cursus erat ut, posuere mauris. Pellentesque ornare mauris at sapien faucibus, eget mattis dolor ornare. Aliquam vitae massa at turpis porta placerat. Donec blandit, magna eu mollis viverra, est enim commodo lacus, ut ultricies magna arcu vitae justo. Aenean molestie sem eget luctus gravida. Suspendisse facilisis enim vitae cursus mattis. Mauris at orci posuere, suscipit sapien eget, dapibus nulla. Duis tristique accumsan libero ac semper. Etiam at ligula eu massa tincidunt hendrerit sed ac justo. Curabitur et pharetra leo. In hac habitasse platea dictumst.",
+    "imgSrc": "assets/img/img020.jpg",
+    "notes": 161,
+    "date": "2020-14-11T17:50:00.511Z",
+    "tags": ["Qué estuve jugando", "Peñalolén"]
+  },
+  {
+    "id": 21,
+    "type": "viendo",
+    "title": "Qué estuve viendo #7",
+    "content": "Donec quis eros augue. Mauris eget ultricies sapien. Vivamus quam tortor, viverra id nunc quis, lobortis pulvinar tellus. Aenean velit justo, ultrices dapibus fermentum sit amet, dapibus quis sem. Fusce facilisis commodo lectus in auctor. Aliquam euismod faucibus mollis. Nulla dictum nisi commodo metus euismod dictum. Suspendisse potenti. Aenean pharetra in eros ac tristique. Nullam sagittis tincidunt faucibus. Nulla molestie, tortor sit amet tristique dignissim, turpis elit imperdiet ipsum, vel porta nisl mauris quis tellus. Quisque eu ante iaculis, tincidunt velit non, consequat turpis. Donec nec rhoncus lectus. Quisque egestas, metus iaculis lobortis consectetur, purus dolor cursus libero, vel vehicula tortor turpis et nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum tempus condimentum.",
+    "moreContent": "Proin sed sapien turpis. Nulla volutpat finibus augue, congue gravida magna. Integer vitae pulvinar turpis, eu hendrerit tortor. Vivamus molestie at ligula nec fringilla. Phasellus in efficitur nibh. Nam malesuada, sem sit amet facilisis faucibus, neque mi egestas velit, vitae vehicula diam orci eu ligula. Suspendisse turpis nisi, mattis sagittis porta ut, convallis ut nulla. Fusce ut congue purus.\nVestibulum elementum dictum felis eu convallis. Pellentesque eget turpis a massa vehicula lobortis. Cras ut felis in tellus pellentesque euismod. Sed ultricies lacinia mauris, eget laoreet dolor tempor quis. Donec vel leo et ante facilisis efficitur nec lobortis magna. Nam sapien ante, auctor vel pharetra vitae, porta nec neque. Vivamus sed hendrerit orci, vel consequat est. Donec quis tempus ante, rutrum auctor nulla. Aliquam sed leo lorem. Praesent ac massa cursus, blandit odio et, sodales elit. Morbi mauris nisi, faucibus sed odio sed, eleifend consectetur mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum vehicula rhoncus enim, ac ultricies eros vestibulum vitae. Cras facilisis tellus eget justo vulputate iaculis.",
+    "imgSrc": "assets/img/img021.jpg",
+    "notes": 155,
+    "date": "2020-08-07T16:55:00.511Z",
+    "tags": ["Qué estuve viendo", "Fílmico"]
+  },
+  {
+    "id": 22,
+    "type": "escuchando",
+    "title": "Qué estuve escuchando #8",
+    "content": "Vestibulum elementum dictum felis eu convallis. Pellentesque eget turpis a massa vehicula lobortis. Cras ut felis in tellus pellentesque euismod. Sed ultricies lacinia mauris, eget laoreet dolor tempor quis. Donec vel leo et ante facilisis efficitur nec lobortis magna. Nam sapien ante, auctor vel pharetra vitae, porta nec neque. Vivamus sed hendrerit orci, vel consequat est. Donec quis tempus ante, rutrum auctor nulla. Aliquam sed leo lorem. Praesent ac massa cursus, blandit odio et, sodales elit. Morbi mauris nisi, faucibus sed odio sed, eleifend consectetur mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum vehicula rhoncus enim, ac ultricies eros vestibulum vitae. Cras facilisis tellus eget justo vulputate iaculis.",
+    "moreContent": "Praesent eu rhoncus risus. Aenean tellus nulla, accumsan id orci id, congue porttitor massa. Morbi rhoncus ligula porttitor felis ornare aliquet. Phasellus egestas ut enim nec finibus. Donec porta dictum libero. Ut eu tortor at metus varius ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent dapibus purus orci, a mattis elit vehicula eu. Aliquam vitae porta risus, luctus finibus felis. Duis nec magna interdum nisi accumsan blandit et nec nibh. Donec in feugiat nisi. Duis lectus eros, auctor at dapibus a, gravida vitae erat. Nullam sit amet egestas odio, eget hendrerit magna. Nulla facilisi. Nulla mollis sed purus sed cursus.",
+    "imgSrc": "assets/img/img022.jpg",
+    "youtubeVideoId": "J9d32O7J3Nc",
+    "notes": 668,
+    "date": "2020-04-09T13:40:00.511Z",
+    "tags": ["Qué estuve viendo", "La Florida"]
+  },
+  {
+    "id": 23,
+    "type": "jugando",
+    "title": "Qué estuve jugando #8",
+    "content": "Etiam pellentesque gravida turpis, at pulvinar turpis euismod eget. Suspendisse pharetra magna velit, eget consequat nunc tempor non. Nulla facilisis, mi nec consectetur tristique, ex lorem ultricies purus, a scelerisque augue dolor vel tortor. Praesent mollis, nibh eu vehicula convallis, justo dui accumsan massa, eu aliquet justo lectus quis ex. Donec eget metus bibendum, cursus erat ut, posuere mauris. Pellentesque ornare mauris at sapien faucibus, eget mattis dolor ornare. Aliquam vitae massa at turpis porta placerat. Donec blandit, magna eu mollis viverra, est enim commodo lacus, ut ultricies magna arcu vitae justo. Aenean molestie sem eget luctus gravida. Suspendisse facilisis enim vitae cursus mattis. Mauris at orci posuere, suscipit sapien eget, dapibus nulla. Duis tristique accumsan libero ac semper. Etiam at ligula eu massa tincidunt hendrerit sed ac justo. Curabitur et pharetra leo. In hac habitasse platea dictumst.",
+    "moreContent": "Quisque posuere orci sapien, at pretium nulla molestie nec. Maecenas in elementum ante. Pellentesque pretium odio sit amet elit ultricies posuere. Mauris suscipit, ex eu pharetra maximus, magna massa semper purus, et consequat libero augue non augue. Suspendisse interdum suscipit ante, in lobortis orci tempus et. Donec iaculis mi sed ante vulputate, in fringilla dolor consectetur. Praesent tincidunt felis ac imperdiet molestie. Duis tristique, justo id iaculis vestibulum, orci ante molestie justo, sit amet dapibus sem purus non nisi. In sollicitudin tortor porttitor, blandit ante sit amet, malesuada diam. Proin vel nunc gravida est egestas tempus. Praesent finibus et odio ut lacinia.\nPellentesque tempor orci eu sapien fringilla, in feugiat nulla cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum rhoncus posuere sapien et malesuada. Morbi non tempus arcu. Pellentesque nec bibendum neque. Sed varius aliquet ante, ut porttitor dolor. Phasellus lacinia ac ex quis cursus. Curabitur feugiat mollis turpis quis lacinia. Nam congue ultrices ante, id dictum enim sagittis vel. Mauris a nibh consectetur, pellentesque eros ut, eleifend velit. Integer consectetur imperdiet tortor, ac aliquet leo efficitur at. Ut sed nibh nec magna lacinia pharetra. Ut eget ex vel ipsum sodales convallis. Nam commodo venenatis lectus. Nulla at libero convallis, faucibus enim at, bibendum lacus.",
+    "imgSrc": "assets/img/img023.jpg",
+    "notes": 185,
+    "date": "2020-09-09T22:30:00.511Z",
+    "tags": ["Qué estuve jugando", "Metro de Santiago"]
+  },
+  {
+    "id": 24,
+    "type": "viendo",
+    "title": "Qué estuve viendo #8",
+    "content": "Phasellus eu nunc et nunc dapibus volutpat. In turpis turpis, aliquam nec nibh quis, vulputate elementum neque. Sed dictum, erat sodales facilisis pharetra, turpis tellus luctus nunc, vitae viverra velit leo eget mi. Phasellus faucibus sodales magna, maximus pharetra nisi vehicula et. Duis hendrerit dictum ante nec viverra. Aenean at ex in justo faucibus sollicitudin. Etiam gravida ligula tortor, porta fermentum felis bibendum vitae. Nam eget felis nisl. Maecenas pellentesque tempus magna eget ullamcorper. Sed mollis ligula risus, id suscipit mi tincidunt ac. Cras maximus erat id vestibulum interdum. Aliquam tincidunt vel dolor nec pellentesque. Etiam in erat nec tortor porta mollis congue in elit. Morbi quis eros suscipit, accumsan erat eget, suscipit arcu.",
+    "moreContent": "Aenean condimentum consequat pellentesque. Aliquam erat volutpat. Phasellus sed fringilla elit, in finibus sapien. Cras ultrices dolor ac interdum auctor. Praesent egestas nisi eget eros consequat fringilla. Nam ut augue at ante dictum sollicitudin. Quisque tincidunt eleifend vehicula. Fusce pellentesque ipsum elit, et tempor mi semper ac. Donec aliquet sagittis nisl, nec mattis orci elementum vel. Vivamus ut tempor leo. Duis tristique nulla consequat mollis auctor. Aliquam mattis pharetra dui, quis molestie dui congue quis. Quisque tempus ex ac neque molestie varius.\nSuspendisse potenti. Vivamus eget ligula nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vel ex vel massa auctor tincidunt non in metus. Donec convallis eros id sapien venenatis, et porttitor tellus mollis. Suspendisse in tortor et magna vehicula pulvinar accumsan a lacus. Nulla molestie eros ac rutrum efficitur.\nNullam sed neque metus. Maecenas ante lectus, laoreet sit amet est id, varius aliquet massa. Proin finibus augue ut justo consequat rutrum. In et erat a nibh elementum elementum. Aliquam erat volutpat. Ut turpis lectus, hendrerit non metus in, pellentesque sollicitudin lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean scelerisque nulla at libero viverra, et pretium lacus hendrerit. In eu massa sit amet ligula volutpat pretium. Etiam ut porttitor nulla. Donec suscipit porttitor risus. Fusce rhoncus et risus et convallis. In blandit, nulla at semper facilisis, risus diam sodales sem, vel consequat metus lacus vel lacus. Nunc eu risus id purus congue lobortis sed et ante. Praesent orci mauris, bibendum eu lobortis sagittis, facilisis non dolor.",
+    "imgSrc": "assets/img/img024.jpg",
+    "notes": 830,
+    "date": "2020-10-11T19:10:00.511Z",
+    "tags": ["Qué estuve viendo", "Penalolén"]
+  },
+  {
+    "id": 25,
+    "type": "escuchando",
+    "title": "Qué estuve escuchando #9",
+    "content": "Pellentesque porta mauris nec porttitor venenatis. Ut facilisis tincidunt augue, at facilisis purus accumsan id. Duis non vehicula urna. Vestibulum rutrum orci et pretium tristique. Cras vulputate facilisis dolor, in lobortis odio suscipit eget. Sed laoreet luctus massa, in congue sapien laoreet id. Nullam gravida, nulla eget feugiat suscipit, nisl justo ultricies justo, a posuere elit dui ac enim. Vestibulum luctus cursus lorem ac euismod. Duis nec bibendum elit, nec posuere elit. Phasellus id felis nec nisi tempor accumsan in vitae lectus. Nullam libero velit, efficitur molestie ipsum eu, congue mattis enim. Aliquam vitae faucibus lorem. Vivamus eu tristique magna. Duis in nisl efficitur, convallis neque nec, accumsan nulla.",
+    "moreContent": "In et massa ut neque aliquet pellentesque. In et sollicitudin dui. Nulla vel ultricies risus. Morbi hendrerit gravida leo, euismod semper lacus bibendum ut. Duis tincidunt maximus lacinia. Sed elit felis, consectetur sed justo at, lobortis egestas libero. Nulla facilisi. Donec faucibus ligula diam. Donec ut tincidunt sapien. Maecenas id ligula ut sem aliquet maximus eget et nunc. Fusce at porta ipsum. Fusce a sollicitudin nibh.\nNam porttitor convallis mauris tincidunt venenatis. Phasellus dolor erat, pharetra non metus placerat, cursus imperdiet felis. Aenean non vestibulum eros, et rutrum nulla. Donec augue nulla, malesuada placerat tellus nec, lobortis ultricies justo. Phasellus nec est ipsum. Aenean ultrices id leo vitae sagittis. Maecenas nibh arcu, suscipit non interdum sed, ullamcorper sit amet diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "imgSrc": "assets/img/img025.jpg",
+    "youtubeVideoId": "kiKGP5Fbs8M",
+    "notes": 71,
+    "date": "2020-11-14T09:45:00.511Z",
     "tags": ["Qué estuve viendo", "Peñalolén"]
   }
 ]

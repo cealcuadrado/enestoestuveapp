@@ -1,4 +1,4 @@
-<div class="types">
+<section class="types">
   <div *ngIf="posts; else loading">
     <div class="types-header">
       <div [ngSwitch]="type">
@@ -22,12 +22,24 @@
     <hr/>
 
     <app-post
-      *ngFor="let post of posts"
+      *ngFor="let post of posts | paginate: { itemsPerPage: maxItemsPerPage, currentPage: page}"
       [post]="post"
       [showMore]="false">
     </app-post>
+
+    <div class="pagination d-flex justify-content-center align-items-center">
+      <pagination-controls
+        previousLabel="Anterior"
+        nextLabel="Siguiente"
+        screenReaderPaginationLabel="Paginación"
+        screenReaderPageLabel="Página"
+        responsive="true"
+        autoHide="true"
+        (pageChange)="onPageChange($event)">
+      </pagination-controls>
+    </div>
   </div>
   <ng-template #loading>
     <i class="fa fa-spinner fa-spin fa-fw"></i>
   </ng-template>
-</div>
+</section>

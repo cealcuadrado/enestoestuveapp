@@ -6,28 +6,37 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-types',
   templateUrl: './types.component.html',
-  styleUrls: ['./types.component.scss']
+  styleUrls: ['./types.component.scss'],
 })
 export class TypesComponent implements OnInit {
-
   type: string;
   posts: Post[];
 
+  page = 1;
+  maxItemsPerPage = 6;
+
   constructor(
     private activatedRoute: ActivatedRoute,
-    private post: PostService
-  ) { }
+    private post: PostService,
+    private window: Window
+  ) {}
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(params => {
+    this.activatedRoute.params.subscribe((params) => {
       if (params.type) {
         this.type = params.type;
         let type = this.type.toLowerCase();
-        this.post.getPostsByType(type).subscribe(posts => {
+        this.post.getPostsByType(type).subscribe((posts) => {
           this.posts = posts;
         });
       }
     });
   }
 
+  onPageChange(event: any): void {
+    this.page = event;
+    this.window.scrollTo({
+      top: 0,
+    });
+  }
 }

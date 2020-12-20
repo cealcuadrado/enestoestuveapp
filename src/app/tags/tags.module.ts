@@ -1,3 +1,4 @@
+import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './../shared/shared.module';
@@ -14,7 +15,8 @@ import { TagsComponent } from './tags.component';
     CommonModule,
     TagsRoutingModule,
     SharedModule,
-    NgbModule
+    NgbModule,
+    NgxPaginationModule
   ]
 })
 export class TagsModule { }

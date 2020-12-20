@@ -6,30 +6,37 @@ import { Post } from '../shared/interfaces/post';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  styleUrls: ['./search.component.scss'],
 })
 export class SearchComponent implements OnInit {
-
   query: string;
   posts: Post[];
 
   page = 1;
+  maxItemsPerPage = 6;
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private post: PostService
-  ) { }
+    private post: PostService,
+    private window: Window
+  ) {}
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(params => {
+    this.activatedRoute.params.subscribe((params) => {
       if (params.query) {
         this.query = params.query;
         console.log(this.query);
-        this.post.searchPost(this.query).subscribe(posts => {
+        this.post.searchPost(this.query).subscribe((posts) => {
           this.posts = posts;
         });
       }
     });
   }
 
+  onPageChange(event: any): void {
+    this.page = event;
+    this.window.scrollTo({
+      top: 0,
+    });
+  }
 }

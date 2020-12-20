@@ -1,36 +1,41 @@
-<section class="search-title">
-  <h1 class="text-uppercase font-weight-bold">
-    <i class="fas fa-search fa-fw"></i> Búsqueda:<br /><small>{{query}}</small>
-  </h1>
-</section>
+<section class="search">
+  <section class="search-title">
+    <h1 class="text-uppercase font-weight-bold">
+      <i class="fas fa-search fa-fw"></i> Búsqueda:<br /><small>{{query}}</small>
+    </h1>
+  </section>
 
-<section class="search-content">
-  <div *ngIf="posts; else loading">
-    <div *ngIf="posts.length > 0">
-      <p>{{posts.length}} resultados(s) encontrado(s).</p>
+  <section class="search-content">
+    <div *ngIf="posts; else loading">
+      <div *ngIf="posts.length > 0">
+        <p>{{posts.length}} resultados(s) encontrado(s).</p>
+      </div>
+      <div *ngIf="posts.length == 0">
+        <p>No se encontraron resultados.</p>
+      </div>
+
+      <hr />
+
+      <app-post
+        *ngFor="let post of posts | paginate: {itemsPerPage: maxItemsPerPage, currentPage: page}"
+        [post]="post"
+        [showMore]="false">
+      </app-post>
+
+      <div class="pagination d-flex justify-content-center align-items-center">
+        <pagination-controls
+          previousLabel="Anterior"
+          nextLabel="Siguiente"
+          screenReaderPaginationLabel="Paginación"
+          screenReaderPageLabel="Página"
+          responsive="true"
+          autoHide="true"
+          (pageChange)="onPageChange($event)">
+        </pagination-controls>
+      </div>
     </div>
-    <div *ngIf="posts.length == 0">
-      <p>No se encontraron resultados.</p>
-    </div>
-
-    <hr/>
-
-    <app-post
-      *ngFor="let post of posts"
-      [post]="post"
-      [showMore]="false">
-    </app-post>
-
-    <ngb-pagination
-      class="d-flex justify-content-center"
-      [collectionSize]="posts.length"
-      [(page)]="page"
-      [boundaryLinks]="true"
-      [maxSize]="5">
-    </ngb-pagination>
-  </div>
-  <ng-template #loading>
-    <i class="fas fa-spinner fa-spin fa-fw"></i> Cargando...
-  </ng-template>
+    <ng-template #loading>
+      <i class="fas fa-spinner fa-spin fa-fw"></i> Cargando...
+    </ng-template>
+  </section>
 </section>
-

@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { PostService } from './../shared/services/post.service';
 import { Post } from './../shared/interfaces/post';
 import { Component, OnInit, OnDestroy } from '@angular/core';
@@ -10,16 +11,18 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 })
 export class TagsComponent implements OnInit, OnDestroy {
   tag: string;
-  navigationSubscription;
+  private navigationSubscription;
 
   page = 1;
+  maxItemsPerPage = 6;
 
   posts: Post[];
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private post: PostService,
-    private router: Router
+    private router: Router,
+    private window: Window
   ) {
     this.navigationSubscription = this.router.events.subscribe((e) => {
       if (e instanceof NavigationEnd) {
@@ -28,15 +31,13 @@ export class TagsComponent implements OnInit, OnDestroy {
     });
   }
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   initialiseInvites() {
     this.activatedRoute.params.subscribe((params) => {
       if (params.tag) {
         this.tag = this.setCleanTag(params.tag);
-        this.post.getPostsByTag(this.tag).subscribe(posts => {
+        this.post.getPostsByTag(this.tag).subscribe((posts) => {
           this.posts = posts;
         });
       }
@@ -50,6 +51,12 @@ export class TagsComponent implements OnInit, OnDestroy {
     return newStr;
   }
 
-  ngOnDestroy() {
+  onPageChange(event: any): void {
+    this.page = event;
+    this.window.scrollTo({
+      top: 0,
+    });
   }
+
+  ngOnDestroy() {}
 }

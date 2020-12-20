@@ -1,13 +1,14 @@
 import { Observable } from 'rxjs';
 import { PostService } from './../shared/services/post.service';
 import { Post } from './../shared/interfaces/post';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tags',
   templateUrl: './tags.component.html',
   styleUrls: ['./tags.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TagsComponent implements OnInit, OnDestroy {
   tag: string;

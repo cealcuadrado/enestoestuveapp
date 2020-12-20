@@ -1,12 +1,13 @@
 import { PostService } from './../shared/services/post.service';
 import { Post } from './../shared/interfaces/post';
 import { ActivatedRoute } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-types',
   templateUrl: './types.component.html',
   styleUrls: ['./types.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TypesComponent implements OnInit {
   type: string;

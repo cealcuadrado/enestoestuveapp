@@ -5,6 +5,12 @@
     ul {
       padding-inline-start: 0;
       text-transform: uppercase;
+
+      li {
+        &.current {
+          background-color: black;
+        }
+      }
     }
   }
 }

@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
   query: string;
   posts: Post[];
 
-  page = 1;
+  page: number;
   maxItemsPerPage = 6;
 
   constructor(
@@ -23,10 +23,11 @@ export class SearchComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+
     this.activatedRoute.params.subscribe((params) => {
+      this.page = 1;
       if (params.query) {
         this.query = params.query;
-        console.log(this.query);
         this.post.searchPost(this.query).subscribe((posts) => {
           this.posts = posts;
         });

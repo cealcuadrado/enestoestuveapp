@@ -13,7 +13,7 @@ export class TypesComponent implements OnInit {
   type: string;
   posts: Post[];
 
-  page = 1;
+  page: number;
   maxItemsPerPage = 6;
 
   constructor(
@@ -24,6 +24,7 @@ export class TypesComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
+      this.page = 1;
       if (params.type) {
         this.type = params.type;
         let type = this.type.toLowerCase();

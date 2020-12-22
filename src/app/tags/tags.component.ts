@@ -14,7 +14,7 @@ export class TagsComponent implements OnInit, OnDestroy {
   tag: string;
   private navigationSubscription;
 
-  page = 1;
+  page: number;
   maxItemsPerPage = 6;
 
   posts: Post[];
@@ -36,6 +36,7 @@ export class TagsComponent implements OnInit, OnDestroy {
 
   initialiseInvites() {
     this.activatedRoute.params.subscribe((params) => {
+      this.page = 1;
       if (params.tag) {
         this.tag = this.setCleanTag(params.tag);
         this.post.getPostsByTag(this.tag).subscribe((posts) => {

@@ -38,8 +38,9 @@ export class HeaderComponent implements OnInit {
     this.isMenuCollapsed = true;
   }
 
-  submitQuery()  {
+  submitQuery() {
     let searchQuery = this.form.value.searchQuery;
     this.router.navigate(['/search', searchQuery]);
+    this.closeCollapse();
   }
 }
